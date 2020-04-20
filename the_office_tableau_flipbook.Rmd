@@ -1,0 +1,118 @@
+---
+title: "'The Office' Tableau Instructions"
+subtitle: ""
+author: "Gina Reynolds, December 2019"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [default, hygge, ninjutsu]
+    nature:
+      ratio: 16:10
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+
+```{r setup, include = F}
+# This is the recommended set up for flipbooks
+# you might think about setting cache to TRUE as you gain practice --- building flipbooks from scracth can be time consuming
+knitr::opts_chunk$set(fig.width = 8, message = FALSE, warning = FALSE, comment = "", cache = T, fig.retina = 3, out.width = "100%")
+library(flipbookr)
+library(tidyverse)
+```
+
+---
+
+
+
+In this walk-through we will see some data prep moves.  Moving variable first understood as measures to dimensions, and converting variables understood as discrete to continuous.  
+
+--
+
+We'll see the "small multiples" concept at work -- where the x-position represents first a category, and second a continuous variable.
+
+--
+
+We'll also see how to change aesthetics across the board - i.e. the *unmapped aesthetic choices* for our marks/geometric objects.  So the case, for example where color does not do any variable representation, but is just a personal choice. 
+
+
+---
+
+The [data](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-17/office_ratings.csv) is made available via the [#TidyTuesday](https://github.com/rfordatascience/tidytuesday) project.  
+
+
+---
+
+
+
+| variable	|value type	|description|
+| :--- | ---: | ---:|
+|season	|double	|Season number |
+|episode|	double|	Episode number |
+|title	|character|	Title of episode |
+|imdb_rating	|double	|IMDB Rating (10 is best) |
+|total_votes	|double	|Total votes by users |
+|air_date	|date|	Original air date |
+
+Note: In Tableau double is called "decimal" - it is a numeric variable that allows for values beyond the counting numbers (integers - ggplot and Tableau use the same terminology).
+
+---
+
+
+`r chunk_reveal("the_office", break_type = "rotate", display_type = "output")`
+
+```{r the_office, include=F}
+knitr::include_graphics(path = "the_office_facet/01.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/02.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/03.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/04.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/05.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/06.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/07.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/08.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/09.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/10.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/11.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/12.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/13.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/14.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/15.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/16.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/17.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/18.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/19.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/20.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/21.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/22.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/23.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/24.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/25.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/26.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/27.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/28.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/29.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/30.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/31.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/32.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/33.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/34.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/35.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/36.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/37.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/38.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/39.png") #ROTATE
+knitr::include_graphics(path = "the_office_facet/40.png") #ROTATE
+
+```
+
+
+
+---
+
+
+
+```{css, eval = TRUE, echo = FALSE}
+.remark-code{line-height: 1.5; font-size: 80%}
+```
