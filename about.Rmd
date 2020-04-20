@@ -1,0 +1,10 @@
+---
+title: "Tableau Tutorials"
+author: "Gina Reynolds"
+date: "4/20/2020"
+output: html_document
+---
+
+
+
+- ['The Office' Data, *Faceting, Changing mark type, unmapped aesthetics, and Titles/Subtitles/Summaries*](the_office_tableau_flipbook.html)    ![](the_office_facet/40.png){width=20%}

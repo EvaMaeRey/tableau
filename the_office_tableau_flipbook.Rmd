@@ -1,7 +1,7 @@
 ---
 title: "'The Office' Tableau Instructions"
 subtitle: ""
-author: "Gina Reynolds, December 2019"
+author: "Gina Reynolds, April 2020"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -25,8 +25,6 @@ library(tidyverse)
 
 ---
 
-
-
 In this walk-through we will see some data prep moves.  Moving variable first understood as measures to dimensions, and converting variables understood as discrete to continuous.  
 
 --
@@ -45,7 +43,7 @@ The [data](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/
 
 ---
 
-
+## What variables are in this data set?
 
 | variable	|value type	|description|
 | :--- | ---: | ---:|
@@ -57,6 +55,8 @@ The [data](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/
 |air_date	|date|	Original air date |
 
 Note: In Tableau double is called "decimal" - it is a numeric variable that allows for values beyond the counting numbers (integers - ggplot and Tableau use the same terminology).
+
+For more description visit the [#TidyTuesday homepage](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-03-17/readme.md) for this data set.
 
 ---
 
@@ -108,9 +108,20 @@ knitr::include_graphics(path = "the_office_facet/40.png") #ROTATE
 ```
 
 
+---
+
+# Additional topics for lecture that didn't make it into the walk through.
+
+- Also talk about titles icon.  Plot title, summary, and caption.
+- Filter/deleting marks
+
+
 
 ---
 
+## Notes on ways to improve references such as this
+
+- The marks shelf needs to be wider such that you can see the entire variable name --- like SUM(Number of Records).  This pill is cut off in the walk-through.
 
 
 ```{css, eval = TRUE, echo = FALSE}

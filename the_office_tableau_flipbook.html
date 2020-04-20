@@ -3,7 +3,7 @@
   <head>
     <title>‘The Office’ Tableau Instructions</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Gina Reynolds, December 2019" />
+    <meta name="author" content="Gina Reynolds, April 2020" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/hygge.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/ninjutsu.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
 class: center, middle, inverse, title-slide
 
 # ‘The Office’ Tableau Instructions
-### Gina Reynolds, December 2019
+### Gina Reynolds, April 2020
 
 ---
 
@@ -23,8 +23,6 @@ class: center, middle, inverse, title-slide
 
 
 ---
-
-
 
 In this walk-through we will see some data prep moves.  Moving variable first understood as measures to dimensions, and converting variables understood as discrete to continuous.  
 
@@ -34,7 +32,7 @@ We'll see the "small multiples" concept at work -- where the x-position represen
 
 --
 
-We'll also see how to change aesthetics across the board - i.e. the unmapped aesthetic choices for our marks/geometric objects.
+We'll also see how to change aesthetics across the board - i.e. the *unmapped aesthetic choices* for our marks/geometric objects.  So the case, for example where color does not do any variable representation, but is just a personal choice. 
 
 
 ---
@@ -44,7 +42,7 @@ The [data](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/
 
 ---
 
-
+## What variables are in this data set?
 
 | variable	|value type	|description|
 | :--- | ---: | ---:|
@@ -56,6 +54,8 @@ The [data](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/
 |air_date	|date|	Original air date |
 
 Note: In Tableau double is called "decimal" - it is a numeric variable that allows for values beyond the counting numbers (integers - ggplot and Tableau use the same terminology).
+
+For more description visit the [#TidyTuesday homepage](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-03-17/readme.md) for this data set.
 
 ---
 
@@ -183,9 +183,20 @@ count: false
 
 
 
+---
+
+# Additional topics for lecture that didn't make it into the walk through.
+
+- Also talk about titles icon.  Plot title, summary, and caption.
+- Filter/deleting marks
+
+
 
 ---
 
+## Notes on ways to improve references such as this
+
+- The marks shelf needs to be wider such that you can see the entire variable name --- like SUM(Number of Records).  This pill is cut off in the walk-through.
 
 
 &lt;style type="text/css"&gt;
