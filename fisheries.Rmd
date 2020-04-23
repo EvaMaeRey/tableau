@@ -29,24 +29,43 @@ In this walk-through, you'll practice some of your tableau skills.  The data is 
 
 ---
 
-The [data](https://raw.githubusercontent.com/EvaMaeRey/ggplot2_grammar_guide/master/exercises/fisheries.csv) is made available via the [#TidyTuesday](https://github.com/rfordatascience/tidytuesday) project.  
+The [data](https://raw.githubusercontent.com/EvaMaeRey/ggplot2_grammar_guide/master/exercises/fisheries.csv) is made available on Github. 
 
-Save the data and load it into tableau. 
+Save the data and load it into Tableau.  It is a .csv file, so you will load it via "text" portal.  
 
 ---
 
 ### In Tableau
 
 - Build a choropleth map (filled political boundaries) where color represents Capture or Aquaculture.  
-- Adjust the color palette from the default. 
+- Then, *adjust the color palette from the default.* 
 
-### Also:
+--
+
+Also:
 
 - Build a scatterplot, aquaculture v. capture.  
 - Add labels to the points  
 - Have color represent the variable peru_or_chile.  
 - Select your own colors for that discrete color scale.  
 - Adjust the x and y scale to log10 scale
+
+
+---
+
+## Recall:
+
+--
+
+We sometimes need to adjust how Tableau interprets variables.
+
+--
+
+"Measures" are aggregates of our variables, and we sometimes need to drag that variable up to the "Dimensions" shelf.  
+
+--
+
+Additionally, variables may need to be converted from discrete to continous.  This will be the case in these examples.
 
 
 ---
