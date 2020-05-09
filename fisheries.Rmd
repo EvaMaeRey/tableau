@@ -38,7 +38,7 @@ Save the data and load it into Tableau.  It is a .csv file, so you will load it 
 ### In Tableau
 
 - Build a choropleth map (filled political boundaries) where color represents Capture or Aquaculture.  
-- Then, *adjust the color palette from the default.* 
+- Then, *adjust the color palette from the default.*
 
 --
 
